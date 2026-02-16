@@ -1,0 +1,14 @@
+{
+  "name": "copilot-only-pr-review-demo",
+  "private": true,
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "postinstall": "npm -w server i && npm -w web i",
+    "dev": "npm -w server run dev & npm -w web run dev",
+    "build": "npm -w server run build && npm -w web run build",
+    "pr:report": "node scripts/pr-report.mjs"
+  }
+}
