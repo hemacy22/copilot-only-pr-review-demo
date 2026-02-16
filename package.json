@@ -1,6 +1,13 @@
 {
   "name": "copilot-only-pr-review-demo",
+  "version": "1.0.0",
+  "description": "Demo project to track GitHub Copilot and human PR review metrics without Spec-Kit",
   "private": true,
+  "keywords": ["github", "copilot", "pull-request", "metrics", "code-review"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hemacy22/copilot-only-pr-review-demo.git"
+  },
   "workspaces": [
     "server",
     "web"
