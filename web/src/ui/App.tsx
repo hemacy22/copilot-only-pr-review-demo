@@ -43,8 +43,8 @@ export function App(){
 
   return (
     <div style={{padding:16,fontFamily:'system-ui, sans-serif'}}>
-      <h1>PR Review Metrics (Copilot Only)</h1>
-      <p>This repo does not use Spec-Kit. Copilot reviews will be triggered via GitHub Rulesets and logged by a GitHub Action into <code>metrics/pr-metrics.json</code>.</p>
+      <h1>📊 PR Review Metrics Dashboard</h1>
+      <p>Track Copilot and human review performance without Spec-Kit. Review metrics are automatically collected via GitHub Actions and stored in <code>metrics/pr-metrics.json</code>.</p>
 
       <div style={{display:'grid',gridTemplateColumns:'repeat(2, minmax(200px, 1fr))',gap:12,margin:'12px 0'}}>
         <MetricCard title="Avg time to FIRST review" value={nice(avgFirst)} />
