@@ -36,6 +36,11 @@ Generate a terminal summary anytime:
 npm run pr:report
 ```
 
+## Troubleshooting
+- **No metrics showing?** Ensure at least one PR has been opened and reviewed. The workflow generates `metrics/pr-metrics.json` after PR events.
+- **Copilot not reviewing?** Check that automatic Copilot review is enabled in your repository's branch protection rulesets.
+- **Dashboard not loading?** Make sure both the server and web are running (`npm run dev` from repo root).
+
 ## Notes
 - This project intentionally avoids Spec-Kit (no `specify` CLI, no /speckit commands).
 - To compare with your Spec-Kit runs, collect a similar set of PRs here and compare the averages.
